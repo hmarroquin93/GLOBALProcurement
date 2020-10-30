@@ -284,6 +284,8 @@ border-top: 9px solid #CFC45C;
         position: absolute;
         width: 100%;
         top: 17vh;
+            z-index: 1;
+        pointer-events : none;
     }
     .divider1{
         display: grid;
@@ -295,14 +297,16 @@ border-top: 9px solid #CFC45C;
     
     .shadowtitle{
     
-    font-size: 140px;
+    font-size: 9vh;
     color: #20202066;
         position: absolute;
     left: 3vw;
+            top: 6vh;
     }
     .blockplain1{
         background-color: #CFC45C;
             height: 50vh;
+        position: relative;
     }
     
     .subtitle-plane{
@@ -311,21 +315,50 @@ border-top: 9px solid #CFC45C;
         margin-bottom: 5px;
     }
     .img-plane{
-        width: 140px;
+        width: 100px;
     display: inline-block;
     }
     
     .ptextplane{
-                font-size: 28px;
+                font-size: 19px;
     margin: 0;
+        margin-left: 23px;
     }
 
     .containerplane2{
         display: grid;
-    grid-template-columns: 140px 50%;
+    grid-template-columns: 100px 50%;
     }
     .raw1plane{
             padding-left: 12%;
     padding-top: 9%;
+    }
+
+    .plane1div:hover + .plane2 {
+        display: block;
+    }
+    .plane2div{
+        background-color: black;
+    }
+    .textbigplane{
+        font-size: 9vh;
+        color: white;
+        display: block;
+        margin: 0;
+        
+    }
+
+    .textbigplanediv{
+        width: 100%;
+        height: 100%;
+    }
+    .textbigplanediv:hover{
+    background-color: #CFC45C;    
+    }
+    .textbigplanediv:hover + .plane1div{
+        background-color: blue;
+    }
+        .plane2{
+        display: none;  
     }
 }

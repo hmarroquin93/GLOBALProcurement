@@ -6,6 +6,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" type="text/css" href="Style/main.css"  />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <title>Global Procerument services</title>
 </head>
 
@@ -281,31 +283,142 @@
             
             
             <img src="Images/airline-2908745_1920.png" class="plane-bttom">
+                
+                
+                
             <div class="divider1">
             
                 
-                <div class="blockplain1">
+                <div class="blockplain1 plane1div">
                     <span class="shadowtitle">Conffidence</span>
                     <div class="raw1plane">
                 <h2 class="subtitle-plane">Conffidence</h2>
                         
                        <div class="containerplane2">
-                        <img src="Images/hawker-539490_1920.jpg" class="img-plane">
+                        <img src="Images/deal.svg" class="img-plane">
                         <p class="text-plane ptextplane">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex mauris, bibendum eu quam et.</p>
                        </div>
                         
                         
                         </div>
                 </div>
-                <div>
                 
+                
+                
+                
+                
+                <div class="blockplain1 plane2div">
+                    <div class="plane2">
+                    <span class="shadowtitle">We find it</span>
+                    <div class="raw1plane">
+                <h2 class="subtitle-plane">We find it</h2>
+                        
+                       <div class="containerplane2">
+                        <img src="Images/magnifying-glass.svg" class="img-plane">
+                        <p class="text-plane ptextplane">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex mauris, bibendum eu quam et.</p>
+                       </div>
+                        
+                        
+                        </div>
+                    
+                    
+                    </div>
+                    
+                    <div class="textbigplanediv">
+                    <h2 class="textbigplane">We find it</h2>
+                    </div>
+                    
                 </div>
+                
+                
+                
+                
             </div>
+                
+                
+                
+                
+                         <div class="divider1">
+            
+                
+                <div class="blockplain1">
+                    <span class="shadowtitle">World wide</span>
+                    <div class="raw1plane">
+                <h2 class="subtitle-plane">World wide</h2>
+                        
+                       <div class="containerplane2">
+                        <img src="Images/earth-grid-symbol.svg" class="img-plane">
+                        <p class="text-plane ptextplane">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex mauris, bibendum eu quam et.</p>
+                       </div>
+                        
+                        
+                        </div>
+                </div>
+                <div class="blockplain1">
+                    <span class="shadowtitle">Safe time</span>
+                    <div class="raw1plane">
+                <h2 class="subtitle-plane">Safe time</h2>
+                        
+                       <div class="containerplane2">
+                        <img src="Images/clock.svg" class="img-plane">
+                        <p class="text-plane ptextplane">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex mauris, bibendum eu quam et.</p>
+                       </div>
+                        
+                        
+                        </div>
+                </div>
+            </div>   
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
             </div>
             
             
         </div>
     </div>
+    
+    
+    <script>
+    
+    $(".plane2div").hover(function(){
+  $(".plane2").css("display", "block");
+  });
+        
+        
+        
+        $(".plane2div").hover(function() {
+    $(".plane2").css("display", "block");
+    $(".plane2div").css("background-color", "#CFC45C");
+    $(".textbigplanediv").css("display", "none");
+},function() {
+   $(".plane2").css("display", "none");
+   $(".textbigplanediv").css("display", "block");
+   $(".plane2div").css("background-color", "black");
+});
+        
+        
+    
+    </script>
 </body>
 </html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
