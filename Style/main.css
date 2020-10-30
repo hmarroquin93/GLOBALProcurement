@@ -131,3 +131,16 @@ border-top: 9px solid #CFC45C;
 .two-one{
     margin-top: 60px
 }
+.attr-cont{
+    text-align: center;
+    padding-top: 40px;
+}
+#Capa_1{
+    width: 115px;
+    height: 115px;
+    fill: white;
+}
+
+.text-wid{
+    color: white
+}
