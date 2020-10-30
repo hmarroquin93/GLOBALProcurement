@@ -272,6 +272,60 @@ border-top: 9px solid #CFC45C;
     }
     .desktop-3{
     display: block;
+            position: relative;
+      
 }
+    .third-section{
+        height: 100vh;
+          background-color: #313131;
+    }
 
+    .plane-bttom{
+        position: absolute;
+        width: 100%;
+        top: 17vh;
+    }
+    .divider1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+            width: 100%;
+    height: 50%;
+        z-index: 1;
+    }
+    
+    .shadowtitle{
+    
+    font-size: 140px;
+    color: #20202066;
+        position: absolute;
+    left: 3vw;
+    }
+    .blockplain1{
+        background-color: #CFC45C;
+            height: 50vh;
+    }
+    
+    .subtitle-plane{
+            font-weight: bold;
+    font-size: 68px;
+        margin-bottom: 5px;
+    }
+    .img-plane{
+        width: 140px;
+    display: inline-block;
+    }
+    
+    .ptextplane{
+                font-size: 28px;
+    margin: 0;
+    }
+
+    .containerplane2{
+        display: grid;
+    grid-template-columns: 140px 50%;
+    }
+    .raw1plane{
+            padding-left: 12%;
+    padding-top: 9%;
+    }
 }
