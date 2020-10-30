@@ -8,6 +8,11 @@ body{
     background-color: black;
 }
 
+.text-principal{ 
+display: none;
+    color:white;
+}
+
 .menu{
     position: fixed;
     z-index: 1;
@@ -89,6 +94,10 @@ border-top: 9px solid #CFC45C;
 
 }
 
+.desktop-3{
+    display: none
+}
+
 .img-1{
     width: 90%;
     margin: 0 auto;
@@ -143,4 +152,126 @@ border-top: 9px solid #CFC45C;
 
 .text-wid{
     color: white
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .title1 {
+    position: relative;
+    text-transform: uppercase;
+    display: inline;
+    font-size: 60px;
+    font-family: 'Orbitron';
+}
+    
+    #and2{
+          font-size: 45px;
+    }
+    #nics2{
+     font-size: 45px;
+    }
+    
+    
+    .word1 {
+    text-align: left;
+}
+    
+    .padding {
+       padding-top: 28vh;
+    padding-left: 11vw;
+}
+    
+    .wordelec{
+        margin-left: 173px;
+    }
+      .wordand{
+        margin-left: 173px;
+    }
+    
+    .line-title-top {
+    border-top: 9px solid #CFC45C;
+    width: 395px;
+    margin: unset;
+}
+    .rightbar{
+        margin-left: 172px;
+    }
+    
+    .text-principal{
+        display: block;
+        width: 600px;
+        margin-top: 10vh;
+        font-size: 20px
+    }
+    .button-1 {
+        margin-bottom: 0;
+        margin-top: 5vh;
+        margin-left: 400px;
+    }
+    
+    .underline-text{
+            text-decoration: underline;
+    text-decoration-color: #CFC45C;
+    }
+    
+    .one-one{
+        height: 100vh;
+    }
+    
+    
+    .img-1 {
+    
+    width: 38vw;
+    margin-right: 7vw;
+}
+    .avionics-text{
+
+    width: 38vw;
+    margin: 0 auto;
+    display: block;
+    margin-right: 7vw;
+
+    }
+    .margin-0{
+            margin-left: 0;
+    }
+    
+    .subtitle-2{
+        font-size: 17px;
+    }
+    .title-bold{
+            font-size: 52px;
+    margin: 0;
+    }
+    .text-2{
+        margin: 0;
+    font-size: 18px;
+    }
+    
+    .two-one{
+        height: 100vh;
+    }
+    
+    .img-sec{
+        margin: 0;
+    margin-left: 7vw;
+    }
+    
+    .avionics-text2{
+    margin: 0;
+    margin-left: 7vw;
+    }
+
+    .button-2{
+            margin-left: 0;
+    padding: 18px;
+    }
+    
+    .mobile-3{
+        display: none;
+    }
+    .desktop-3{
+    display: block;
+}
+
 }
