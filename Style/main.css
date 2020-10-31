@@ -351,14 +351,56 @@ border-top: 9px solid #CFC45C;
     .textbigplanediv{
         width: 100%;
         height: 100%;
+    }    
+    
+    .textbigplane2{
+        font-size: 9vh;
+        color: white;
+        display: block;
+        margin: 0;
+        
     }
+
+    .textbigplanediv2{
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    
     .textbigplanediv:hover{
     background-color: #CFC45C;    
     }
-    .textbigplanediv:hover + .plane1div{
-        background-color: blue;
-    }
-        .plane2{
+
+        .plane3{
+        display: none;  
+    }       .plane2{
         display: none;  
     }
+    
+        .plane3div{
+        background-color: black;
+    }       
+    
+    .plane4{
+        display: none;  
+    }  
+        .plane4div{
+        background-color: black;
+    }
+    
+    
+        .textbigplane3{
+        font-size: 9vh;
+        color: white;
+        display: block;
+        margin: 0;
+        
+    }
+
+    .textbigplanediv3{
+        width: 100%;
+        height: 100%;
+    }
+    
 }
