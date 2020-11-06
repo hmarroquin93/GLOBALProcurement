@@ -70,9 +70,9 @@
         
         
         <div class="one-one">
-        <img src="Images/hawker-539490_1920.jpg" class="img-1">
+        <img src="Images/hawker-539490_1920.jpg" class="img-1 first-image" id="first-image">
             
-            <div class="avionics-text">
+            <div class="avionics-text avionics-text1">
                 <h5 class="margin-0 subtitle-2">what we do</h5>
                 <h2 class="margin-0 title-bold">Avionics</h2>
                 <p class="margin-0 text-2" style="    text-align: justify;">Global Procurement Services Inc is a broadside broker of aircraft avionics, parts equipement, instrumentation and systems specializing in Airplane on Ground (AOG)</p>
@@ -87,7 +87,7 @@
             
             
                     <div class="two-one">
-        <img src="Images/main-board-89050_1280.jpg" class="img-1 img-sec">
+        <img src="Images/main-board-89050_1280.jpg" class="img-1 img-sec" id="second-image">
             
             <div class="avionics-text avionics-text2">
                 <h5 class="margin-0">what we do</h5>
@@ -486,6 +486,17 @@
         
         
         
+        var banner2 = new TimelineMax();
+        banner2.from(".avionics-text1", 1, {opacity: 0, xPercent: -10}) // trigger a TweenMax.to tween        
+        
+        
+        
+        
+        var banner3 = new TimelineMax();
+        banner3.from(".avionics-text2", 1, {opacity: 0, xPercent: -10}) // trigger a TweenMax.to tween
+        
+        
+        
         		var scene = new ScrollMagic.Scene({
 							triggerElement: "#trigger1"
 						})
@@ -494,9 +505,151 @@
 						.addTo(controller);
         
         
+        		var scene2 = new ScrollMagic.Scene({
+							triggerElement: ".first-image"
+						})
+                .setTween(banner2)
+						.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+						.addTo(controller);
         
         
         
+             		var scene3 = new ScrollMagic.Scene({
+							triggerElement: ".img-sec"
+						})
+                .setTween(banner3)
+						.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+						.addTo(controller);
+        
+        
+        
+        
+        
+        
+        
+        /* Store the element in el */
+let el = document.getElementById('first-image')
+
+/* Get the height and width of the element */
+const height = el.clientHeight
+const width = el.clientWidth
+
+/*
+  * Add a listener for mousemove event
+  * Which will trigger function 'handleMove'
+  * On mousemove
+  */
+el.addEventListener('mousemove', handleMove)
+
+/* Define function a */
+function handleMove(e) {
+  /*
+    * Get position of mouse cursor
+    * With respect to the element
+    * On mouseover
+    */
+  /* Store the x position */
+  const xVal = e.layerX
+  /* Store the y position */
+  const yVal = e.layerY
+  
+  /*
+    * Calculate rotation valuee along the Y-axis
+    * Here the multiplier 20 is to
+    * Control the rotation
+    * You can change the value and see the results
+    */
+  const yRotation = 15 * ((xVal - width / 2) / width)
+  
+  /* Calculate the rotation along the X-axis */
+  const xRotation = -15 * ((yVal - height / 2) / height)
+  
+  /* Generate string for CSS transform property */
+  const string = 'perspective(500px) scale(1.1) rotateX(' + xRotation + 'deg) rotateY(' + yRotation + 'deg)'
+  
+  /* Apply the calculated transformation */
+  el.style.transform = string
+}
+
+/* Add listener for mouseout event, remove the rotation */
+el.addEventListener('mouseout', function() {
+  el.style.transform = 'perspective(500px) scale(1) rotateX(0) rotateY(0)'
+})
+
+/* Add listener for mousedown event, to simulate click */
+el.addEventListener('mousedown', function() {
+  el.style.transform = 'perspective(500px) scale(0.9) rotateX(0) rotateY(0)'
+})
+
+/* Add listener for mouseup, simulate release of mouse click */
+el.addEventListener('mouseup', function() {
+  el.style.transform = 'perspective(500px) scale(1) rotateX(0) rotateY(0)'
+})
+       
+        
+        
+        
+        
+                
+        /* Store the element in el */
+let el1 = document.getElementById('second-image')
+
+/* Get the height and width of the element */
+const height1 = el1.clientHeight
+//const width1 = el1.clientWidth
+//
+///*
+//  * Add a listener for mousemove event
+//  * Which will trigger function 'handleMove'
+//  * On mousemove
+//  */
+//el1.addEventListener('mousemove', handleMove1)
+//
+///* Define function a */
+//function handleMove1(e) {
+//  /*
+//    * Get position of mouse cursor
+//    * With respect to the element
+//    * On mouseover
+//    */
+//  /* Store the x position */
+//  const xVal = e.layerX
+//  /* Store the y position */
+//  const yVal = e.layerY
+//  
+//  /*
+//    * Calculate rotation valuee along the Y-axis
+//    * Here the multiplier 20 is to
+//    * Control the rotation
+//    * You can change the value and see the results
+//    */
+//  const yRotation = 15 * ((xVal - width1 / 2) / width1)
+//  
+//  /* Calculate the rotation along the X-axis */
+//  const xRotation = -15 * ((yVal - height1 / 2) / height1)
+//  
+//  /* Generate string for CSS transform property */
+//  const string = 'perspective(500px) scale(1.1) rotateX(' + xRotation + 'deg) rotateY(' + yRotation + 'deg)'
+//  
+//  /* Apply the calculated transformation */
+//  el1.style.transform = string
+//}
+//
+///* Add listener for mouseout event, remove the rotation */
+//el1.addEventListener('mouseout', function() {
+//  el1.style.transform = 'perspective(500px) scale(1) rotateX(0) rotateY(0)'
+//})
+//
+///* Add listener for mousedown event, to simulate click */
+//el1.addEventListener('mousedown', function() {
+//  el1.style.transform = 'perspective(500px) scale(0.9) rotateX(0) rotateY(0)'
+//})
+//
+///* Add listener for mouseup, simulate release of mouse click */
+//el.addEventListener('mouseup', function() {
+//  el.style.transform = 'perspective(500px) scale(1) rotateX(0) rotateY(0)'
+//})
+//     
         
     
     </script>
