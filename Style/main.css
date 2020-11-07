@@ -421,7 +421,7 @@ border-top: 9px solid #CFC45C;
     
     #menutitle{
         width: 480px;
-        font-size: 25px;
+        font-size: 18px;
             padding-left: 25px;
     }
     
@@ -438,7 +438,7 @@ border-top: 9px solid #CFC45C;
     text-align: center;
     padding: 20px 16px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 14px;
 }
     .menu{
         width: 100%;
@@ -457,7 +457,81 @@ border-top: 9px solid #CFC45C;
   background-color: #CFC45C;
   color: black;
 }
+    #img-boutus{
+        width: 100%;
+        filter: grayscale(70%);
+    }
     
+    #aboutus{
+color: white;
+    position: absolute;
+    top: 44%;
+    z-index: 1;
+    left: 40%;
+    font-size: 50px;
+
+    }
     
+    .aboutus1{
+        position: relative;
+    }
     
+    .aboutus2{
+        background-color: white;
+        margin-top: -5px;
+            position: relative;
+    }
+    
+    .aboutustext{
+        color: black;
+        margin: 30px;
+    }
+    
+    .aboucenter{
+            width: 640px; /* Can be in percentage also. */
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    }
+    
+    #rotate-text {
+    width: 155px;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 30%;
+    font-size: 27px;
+}
+    
+    .titleavio{
+            margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+        color: black;
+    }
+    
+    .firsr-aviosectio{
+        height: 36vh;
+        position: relative;
+    }
+    
+    .aviodis{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .img-avio{
+        width: 60%;
+    }
+    .p-avion{
+            width: 60%;
+    text-align: justify;
+    }
+}
+
+
+.bodyclean{
+    background-color: white;
 }
