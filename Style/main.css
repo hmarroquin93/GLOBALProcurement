@@ -570,7 +570,7 @@ color: white;
     .brands{
         background-color: #CFC45C;
     border-radius: 11px;
-        display: grid;
+        display: grid !important;
     grid-template-columns: 1fr 1fr 1fr;
     }
     .capitala{
