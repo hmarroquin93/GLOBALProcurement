@@ -91,9 +91,42 @@ border-top: 9px solid #CFC45C;
 
     background-color: #e4e4e4;
 
+padding-bottom: 1rem!important;
+        padding-top: 1rem!important;
+}
+
+#img-boutus{
+    width: 100%;
+}
+
+.img-avio{
+    width: 100%;
+}
+.firsr-aviosectio{
+    text-align: center;
+}
+.p-avion{
+    padding: 20px 18px;
 
 }
 
+.brands{
+    display: none;
+}
+
+#aboutus{
+    color: white;
+        text-align: center;
+    padding-bottom: 1rem!important;
+        padding-top: 1rem!important;
+}
+
+.aboutus2{
+  color: white;
+    text-align: justify;
+padding: 20px 18px;
+}
+}
 .desktop-3{
     display: none
 }
@@ -127,13 +160,13 @@ border-top: 9px solid #CFC45C;
 }
 
 .button-2{
-    width: 135px;
+    width: 175px;
     border: solid;
     border-width: 2px;
     border-color: black;
     margin: 5%;
     padding: 8px;
-   
+   cursor: pointer;
 }
 
 
@@ -423,7 +456,8 @@ border-top: 9px solid #CFC45C;
         width: 480px;
         font-size: 18px;
             padding-left: 25px;
-        padding: 5px 16px;
+         padding: 18px 16px;
+    margin: 0;
     }
     
     
@@ -442,8 +476,9 @@ border-top: 9px solid #CFC45C;
     font-size: 14px;
 }
     .menu{
+        display: block;
         width: 100%;
-    display: grid;
+    display: grid !important;
     grid-template-columns: auto auto;
     }
     
@@ -543,11 +578,23 @@ color: white;
     font-size: 29px;
 
     }
+    
+    nav{
+        display: none
+    }
+    
+    .brands{
+    display: block;
+}
 }
 
 
+.menu{
+    display: none;
+}
+
  .contact-form {
-        padding: 50px;
+        padding: 20px;
         margin: 30px auto;
     }	
     .contact-form h1 {
