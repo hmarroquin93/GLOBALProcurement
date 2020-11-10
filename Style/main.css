@@ -93,8 +93,8 @@ border-top: 9px solid #CFC45C;
 
     background-color: #e4e4e4;
 
-padding-bottom: 1rem!important;
-        padding-top: 1rem!important;
+padding-bottom: 1rem;
+        padding-top: 1rem;
 }
 
 #img-boutus{
@@ -599,6 +599,11 @@ color: white;
     .brands{
     display: block;
 }
+    
+    .second-section{
+        padding-bottom: 0rem!important;
+    padding-top: 0rem!important;
+    }
 }
 
 
