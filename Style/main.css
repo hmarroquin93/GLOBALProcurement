@@ -584,7 +584,7 @@ color: white;
         background-color: #CFC45C;
     border-radius: 11px;
         display: grid !important;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     .capitala{
         list-style-type: none;
