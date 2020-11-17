@@ -577,6 +577,8 @@ color: white;
     .p-avion{
             width: 60%;
     text-align: justify;
+            overflow-y: auto;
+    height: 260px;
     }
     
     
